@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ }
+ 
+ :root{
+  --font-primary:'Montserrat', sans-serif;
+  --font-secondary: 'DM Sans', sans-serif;
+  --font-terciary: 'Dancing Script', cursive;
+   
+  --color-primary: hsla(238, 27%, 28%, 1);
+  --color-secondary: hsla(198, 32%, 92%, 1);
+  --color-terciary: hsla(35, 100%, 50%, 1);
+ }
+
+
+ .hide {
+  display: none;
+ }
+
+ body {
+   background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  }
+ 
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .screen2 {
+    gap: 17px;
+  }
+  
+  main {
+  padding: 48px 64px 64px 64px;  
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+ }
+
+ h1 {
+  width: 258px;
+  margin-bottom: 14px;
+  color: var(--color-primary);
+  font-family: var(--font-primary);
+  font-size: 24px ;
+ }
+
+ p { 
+  margin-bottom: 20px;
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+  font-size: 15px;
+ }
+
+ #biscoito {
+  border: none;
+  background: none;
+  cursor: pointer;
+ 
+}
+
+ #biscoito:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+ }
+
+ h2 {
+  width: 297px;
+  font-family: var(--font-primary);
+  color: var(--color-primary); 
+}
+
+#message {
+  width: 297px;
+  font-family: var(--font-terciary);
+  font-size: 24px;
+  color: black;
+  background-color: var(--color-secondary);
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  animation: show 1s;
+}
+
+#new {
+  background-color: var(--color-terciary);
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  color: #FFFFFF;
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#new:hover{
+  filter: brightness(1.2);
+}
+
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes show {
+  0% {opacity: 0; transform: translate(0, 200px) scale(0); }
+}

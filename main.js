@@ -52,9 +52,7 @@ function setMessage(){
 
 function handleOpenCookie() {
   handleToggleScreen()
-  console.log("abrir")
   setMessage()
-  console.log(setMessage())
   message.innerHTML = `${setMessage()}`
 }
 
